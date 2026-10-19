@@ -1,0 +1,51 @@
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: linear-gradient(135deg, #0d2818 0%, #1a3d2e 50%, #0d2818 100%);
+    color: #e8f5e9;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .header { text-align: center; margin-bottom: 24px; }
+  .header h1 {
+    font-size: 30px; letter-spacing: 4px;
+    background: linear-gradient(90deg, #a5d6a7, #66bb6a, #a5d6a7);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    margin-bottom: 8px;
+  }
+  .header p { color: #81c784; font-size: 13px; letter-spacing: 1px; }
+  .stat-cards {
+    display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: rgba(46, 125, 50, 0.18);
+    border: 1px solid rgba(102, 187, 106, 0.35);
+    border-radius: 12px; padding: 14px 30px; text-align: center;
+    backdrop-filter: blur(6px);
+    min-width: 150px;
+  }
+  .card .num { font-size: 30px; font-weight: bold; color: #a5d6a7; }
+  .card .label { font-size: 12px; color: #c8e6c9; margin-top: 4px; }
+  .grid { display: grid; grid-template-columns: 3fr 2fr; gap: 18px; max-width: 1500px; margin: 0 auto; }
+  .panel {
+    background: rgba(13, 40, 24, 0.75);
+    border: 1px solid rgba(102, 187, 106, 0.3);
+    border-radius: 14px; padding: 14px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+  }
+  .panel h2 {
+    font-size: 16px; color: #a5d6a7; margin-bottom: 6px;
+    padding-left: 10px; border-left: 4px solid #66bb6a; letter-spacing: 1px;
+  }
+  .panel .sub { font-size: 11px; color: #7ba982; margin: 0 0 6px 14px; }
+  .chart { width: 100%; height: 460px; }
+  .chart-tall { width: 100%; height: 560px; }
+  .full { grid-column: 1 / -1; }
+  .footer {
+    max-width: 1500px; margin: 22px auto 0; font-size: 12px; color: #7ba982;
+    line-height: 1.9; background: rgba(13,40,24,0.6); border-radius: 10px; padding: 14px 20px;
+    border: 1px dashed rgba(102,187,106,0.3);
+  }
+  .footer b { color: #a5d6a7; }
+  @media (max-width: 1000px) { .grid { grid-template-columns: 1fr; } }
